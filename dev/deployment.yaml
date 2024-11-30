@@ -6,12 +6,12 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: frontend
+      app: dev
   template:
     metadata:
-      name: frontend-pod
+      name: dev-pod
       labels:
-        app: frontend
+        app: dev
     
     spec:
       containers:
