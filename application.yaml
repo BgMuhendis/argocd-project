@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: Codeway-Project
+  name: codeway-project
   namespace: argocd
 spec:
   destination:
