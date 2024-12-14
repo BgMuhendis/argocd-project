@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: codeway-project
+  name: Codeway-Project
   namespace: argocd
 spec:
   destination:
-    namespace: dev
+    namespace: argocd-project
     server: https://kubernetes.default.svc
   project: default
   source:
