@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: {{.Values.app.name}}
 spec:
   replicas: 5
   selector:
     matchLabels:
-      app: myapp
+      app: {{.Values.app.name}}
   template:
     metadata:
       labels:
-        app: myapp
+        app: {{.Values.app.name}}
     
     spec:
       containers:

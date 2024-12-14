@@ -1,2 +1,4 @@
 env:
   image: nginx
+app:
+  name: node
