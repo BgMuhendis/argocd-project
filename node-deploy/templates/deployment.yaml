@@ -17,5 +17,5 @@ spec:
         - name: nginx
           image: {{.Values.env.image}}
           ports:
-            - containerPort: 3000
+            - containerPort: 80
   
