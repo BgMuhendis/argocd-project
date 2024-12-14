@@ -1,15 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "codeway.fullname" . }}
-  labels:
-    {{- include "codeway.labels" . | nindent 4 }}
+  name: myapp-service
 spec:
-  type: {{ .Values.service.type }}
+  type: NodePort
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: http
+    - port: 3000
       protocol: TCP
-      name: http
+      targetPort: 3000
+      nodePort: 30080
   selector:
-    {{- include "codeway.selectorLabels" . | nindent 4 }}
+    app: maypp
