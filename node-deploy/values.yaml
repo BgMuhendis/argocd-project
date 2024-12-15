@@ -6,5 +6,4 @@ image:
 
 configmap:
   name: nodeapp-configmap-v1
-  env: development
 

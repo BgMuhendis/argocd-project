@@ -3,7 +3,6 @@ kind: ConfigMap
 metadata:
   name: {{ .Values.configmap.name }}
 data:
-  NODE_ENV: {{.Values.configmap.env}}
   DB_USER: postgres
   DATABASE_PASSWORD: postgres
   DB_HOST: postgresql
