@@ -1,4 +1,5 @@
-env:
-  image: nginx
 app:
   name: node
+
+image:
+  name: node-app:latest
