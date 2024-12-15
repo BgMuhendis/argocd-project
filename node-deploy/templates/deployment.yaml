@@ -18,7 +18,7 @@ spec:
           image: muhammethadikamat/{{.Values.image.name}}
           ports:
             - containerPort: 3000
-          envFrom:
-            - configMapRef:
-                name: {{ .Values.configmap.name }}
+          env:
+            - name: NAME
+              value: Muhammet
   
