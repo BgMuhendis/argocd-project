@@ -1,9 +1,11 @@
 app:
   name: node
 
+configmap:
+  name: nodeapp-configmap-v1
+
 image:
   name: node-app:latest
 
-configmap:
-  name: nodeapp-configmap-v1
+
 
