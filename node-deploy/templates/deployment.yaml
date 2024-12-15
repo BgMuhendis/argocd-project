@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: muhammethadikamat/{{.Values.env.image}}
+          image: muhammethadikamat/{{.Values.image.name}}
           ports:
             - containerPort: 3000
   
