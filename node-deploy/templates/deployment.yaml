@@ -14,11 +14,11 @@ spec:
     
     spec:
       containers:
-        - name: nginx
+        - name: node-app
           image: muhammethadikamat/{{.Values.image.name}}
           ports:
             - containerPort: 3000
-          env:
-            - name: NAME
-              value: "Muhammet"
+          envFrom:
+            - configMapRef:
+                name: {{ .Values.configmap.name }}
   

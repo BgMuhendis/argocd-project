@@ -3,3 +3,8 @@ app:
 
 image:
   name: node-app:latest
+
+configMap:
+  name: nodeApp-configmap-v1
+  env: development
+
