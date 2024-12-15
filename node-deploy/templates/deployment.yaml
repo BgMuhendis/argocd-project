@@ -20,5 +20,5 @@ spec:
             - containerPort: 3000
           env:
             - name: NAME
-              value: Muhammet
+              value: Hadi
   
