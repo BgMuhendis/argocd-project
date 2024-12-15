@@ -5,6 +5,6 @@ image:
   name: node-app:latest
 
 configmap:
-  name: nodeApp-configmap-v1
+  name: nodeapp-configmap-v1
   env: development
 
