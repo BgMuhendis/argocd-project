@@ -3,7 +3,8 @@ app:
 
 deployment:
   name: node-deployment
-  image: node-app:latest
+  image: muhammethadikamat/node-app:latest
+  replicas: 3
 
 service:
   name: node-service

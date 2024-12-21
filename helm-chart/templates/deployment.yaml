@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: {{.Values.deployment.name}}
 spec:
-  replicas: 5
+  replicas: {{.Values.deployment.replicas}}
   selector:
     matchLabels:
       app: {{.Values.app.name}}
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: node-app
-          image: muhammethadikamat/{{.Values.deployment.image}}
+          image: {{.Values.deployment.image}}
           ports:
             - containerPort: 3000
           env:
