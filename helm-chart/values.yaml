@@ -1,11 +1,15 @@
 app:
   name: node
 
-configmap:
-  name: nodeapp-configmap-v1
+deployment:
+  name: node-deployment
+  image: node-app:latest
 
-image:
-  name: node-app:latest
+service:
+  name: node-service
+  port: 3000
+  targetPort: 3000
+  nodePort: 30080
 
 
 

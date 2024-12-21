@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{.Values.app.name}}
+  name: {{.Values.deployment.name}}
 spec:
   replicas: 5
   selector:
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: node-app
-          image: muhammethadikamat/{{.Values.image.name}}
+          image: muhammethadikamat/{{.Values.deployment.image}}
           ports:
             - containerPort: 3000
           env:
